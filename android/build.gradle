@@ -1,18 +1,7 @@
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
+def camerax_version = "1.4.2"
 
-rootProject.buildDir = "../build"
-subprojects {
-    project.buildDir = "${rootProject.buildDir}/${project.name}"
-}
-subprojects {
-    project.evaluationDependsOn(":app")
-}
-
-tasks.register("clean", Delete) {
-    delete rootProject.buildDir
-}
+implementation "androidx.camera:camera-core:$camerax_version"
+implementation "androidx.camera:camera-camera2:$camerax_version"
+implementation "androidx.camera:camera-lifecycle:$camerax_version"
+implementation "androidx.camera:camera-video:$camerax_version"
+implementation "androidx.camera:camera-view:$camerax_version"

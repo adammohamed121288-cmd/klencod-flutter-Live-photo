@@ -1,9 +1,8 @@
-
 name: live_photo
-description: Professional Live Photo Camera App
+description: Professional Android Motion Photo Camera
 publish_to: "none"
 
-version: 1.0.0+1
+version: 2.0.0+2
 
 environment:
   sdk: ">=3.3.0 <4.0.0"
@@ -11,11 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  camera: ^0.11.1
-  gal: ^2.3.0
-  path_provider: ^2.1.5
-  video_player: ^2.9.2
 
 dev_dependencies:
   flutter_test:
